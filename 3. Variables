@@ -1,0 +1,22 @@
+7.1
+1) balanced -> IsBalanced
+2) flag -> Found
+3) flag -> IsDone
+4) moving -> IsMoved
+5) collision -> IsCollided
+
+7.2
+см. предыдущий пункт 
+
+7.3
+for (int i = 0; i < arr.Length; i++)
+ for (int j = 0; j < i; j++) {
+ ...
+ }
+j -> NumberOfElements
+
+7.4
+в структурах first-last, head-tail
+
+7.5
+temp -> TempCharacter
