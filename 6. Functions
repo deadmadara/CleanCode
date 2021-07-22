@@ -1,0 +1,35 @@
+1. Генетический алгоритм, класс Population, замена текущей популяции новыми особями
+void ReplaceAll(double a, double b, double[]arr) ->  ReplaceAllPopulation
+
+2. Генетический алгоритм, класс Population, вычисление значения функции
+double DoMath(double num) ->  ComputeFunction
+
+3. Генетический алгоритм, класс Population, нормализация двоичной строки до заданного разряда
+string Normalization(string str) ->  NormalizeBinString
+
+4. Генетический алгоритм, класс Population, мутация хромосомы
+string Mutate(string unit, int mutpoint) -> MutateChromosome
+
+5. Генетический алгоритм, класс Population, мутация поколения
+void Mutation(int percent, int mutpoint) -> MutatePopulation
+
+6. Генетический алгоритм, класс Population, одна итерация 
+void GA(double a, double b, int mutate, bool opt) -> IterationOfGeneticAlgorithm
+
+7. Расчёт дробей, класс Fraction, отображение дроби в строку
+void show() -> ConvertToString
+
+8. Расчёт дробей, класс Fraction, обработка строки и вычисление значения (в идеале надо разбить на 2 метода)
+string handle(string s) -> HandleAndComputeString
+
+9. Нечёткие множества, класс Set, проверка соответствия (значение принадлежит 0.0-1.0)
+void check_m() -> CheckValues
+
+10. Нечёткие множества, класс Set, копирование множества
+set(mu[] _unit) -> CopySet
+
+11. Нечёткие множества, класс Set, отрицание множества
+set comp ()  -> NegativeSet
+
+12. Нечёткие множества, класс Set, нормализация множеств относительно друг друга
+set norm(set B) -> NormalizeSets
