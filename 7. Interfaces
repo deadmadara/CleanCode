@@ -1,0 +1,6 @@
+1. класс Fraction
+Fraction f = Fraction.FromString("1/5")
+2. ~
+Fraction f = Fraction.FromNumbers(1,5)
+3. класс Player
+Player p = Player.FromJSON("{name: Valeros, class: Human}")
