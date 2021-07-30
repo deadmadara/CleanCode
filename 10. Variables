@@ -1,0 +1,79 @@
+            while (b % a != 0) {  a = b - a * (b / a); }
+            top /= a;
+            bottom /= a;
+            
+1. a = -1;
+2. b = -1;
+
+                char op = ' ';
+                for (int i = 0; i < s.Length; i++)
+                {
+                    if (s[i] == '+' || s[i] == '-' || s[i] == ':' || s[i] == '*') op = s[i];
+                }
+                
+3. op = '';
+
+ int exp = 1;
+ for (int i = 0; i < number.Length - 1; i++) exp *= nbase;
+ ...
+ 
+4. exp = -1;
+
+char[] reverse = new char[res.Length];
+for (int i = 0; i < res.Length; i++) { reverse[res.Length - 1 - i] = res[i]; }
+...
+
+5. reverse = char[];
+
+int ind = 0; 
+for (int i = 0; i < arr.Length; i++) {
+                ind = i;
+                ...
+                
+6. ind = -1;
+
+            chart1.ChartAreas[0].AxisY.Maximum = 1.0;
+            chart1.ChartAreas[0].AxisY.Minimum = -1.0;
+            chart1.ChartAreas[0].AxisY.Interval = 0.1;
+            chart1.ChartAreas[0].AxisX.Maximum = 30;
+            chart1.ChartAreas[0].AxisX.Minimum = 1;
+            chart1.ChartAreas[0].AxisX.Interval = 1;
+            
+7. const double Y_MAX = 1.0;
+8. const double Y_MIN = -1.0;
+9. const double Y_INTERVAL = 0.1;
+10. const int X_MAX = 30;
+11. const int X_MIN = 1;
+12. const int X_INTERVAL = 1;
+
+int counter = 0;
+
+            for (double i = t0; i < 600.0; i += 0.1)
+            {
+                this.chart1.Series["main"].Points.AddXY(i, (rnd.NextDouble() + 1.0) * Math.Sin(2.0 * Math.PI * i * alpha));
+                counter++;
+                if (counter == 10) 
+                {
+                    if (alpha < 2.0) alpha += 0.05;
+                    counter = 0;
+                }
+            }
+            
+13. counter = -1;
+
+int[] rolled = new int[6]; 
+
+14. const int NUM_OF_PLANES = 6;
+
+15.
+public Player(string name, string race, string cls, int exp, int lvl) 
+        {
+            Name = name;
+            Race = race;
+            Class = cls;
+            Exp = exp;
+            Level = lvl;
+        }
+        
+Инициализированы не все поля
+
