@@ -1,0 +1,44 @@
+1. https://github.com/deadmadara/PathfinderSaver-v0.1/blob/master/PathfinderS/MainForm.cs
+2.
+ public LinkedList Merge(LinkedList l1, LinkedList l2) {
+            // объединение двух списков - заносится сумма значений элементов
+            LinkedList l = new LinkedList();
+            //если длины равны и не равны нулю (в таком случае списки пусты)
+            if (l1.Count() == l2.Count() && l1.Count() != 0) Node node1 = l1.head; Node node2 = l2.head;
+                //заносим голову
+                l.head = new Node(node1.value + node2.value);
+                Node current = l.head;
+                //начинаем обход; создаём новый узел и связываем его с предыдущим эл-том
+                while (node1 != null)
+                {
+                    //если следующий - пустой, значит, текущий - конец
+                    if (node1.next == null)
+                    {
+                        l.tail = current;
+                        l.tail.next = null;
+                    }
+                    //иначе создаём новый узел и связываем его с текущим, переходим на него
+                    else
+                    {
+                        current.next = new Node(node1.next.value + node2.next.value);
+                        current = current.next;
+                    }
+                    node1 = node1.next;
+                    node2 = node2.next;
+                }
+            
+            =>
+            
+LinkedList MergedList = new LinkedList();
+ if (List1.Count() > 0)
+  if (List1.Count() == List2.Count()) 
+     { 
+        Node Node1 = List1.Head; Node Node2 = List2.Head;
+        MergedList.Head = new Node (Node1.Value + Node2.Value);
+        
+        Node CurrentNode = MergedList.Head;
+          while (Node1 != null) {
+             ...
+     }
+  
+  
