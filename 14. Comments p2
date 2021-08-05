@@ -1,0 +1,58 @@
+1-4 (1)
+            //сериализация объекта в строку формата JSON 
+            Player p1 = new Player("Valeros", "Human", "Warrior", 1);
+            string JsonString = JsonConvert.SerializeObject(p1);
+            Console.WriteLine(JsonString);
+
+            //десериализация строку формата JSON в объект
+            Player p2 = JsonConvert.DeserializeObject<Player>(JsonString);
+            Console.WriteLine(p2.Name + " " + p2.Race + " " + p2.Class + " " + p2.Level);
+
+            JsonSerializer serializer = new JsonSerializer();
+
+            //запись сериализованного объекта в файл d:\json.txt
+            StreamWriter StreamWriterExample = new StreamWriter(@"d:\json.txt");
+            JsonWriter JsonWriterExample = new JsonTextWriter(StreamWriterExample);
+            serializer.Serialize(JsonWriterExample, p1);
+            StreamWriterExample.Close();
+
+            //чтение строки из файла d:\json.txt и десериализация в объект
+            StreamReader StreamReaderExample = new StreamReader(@"d:\json.txt");
+            JsonReader JsonReaderExample = new JsonTextReader(StreamReaderExample);
+            Player p3 = serializer.Deserialize<Player>(JsonReaderExample);
+            Console.WriteLine(p3.Name + " " + p3.Race + " " + p3.Class + " " + p3.Level);
+            StreamReaderExample.Close();
+            
+5 (6)
+//кнопка для проверки функционала
+void button1_Click(object sender, EventArgs e)
+
+6 (5)
+//переворот строки для нормального представления числа
+for (int i = 0; i < res.Length; i++) reverse[res.Length - 1 - i] = res[i];
+                res = new string(reverse);
+                
+7 (5)
+//присваивание необхдоимо, иначе выдаст ошибку при работе с null
+Player MainPlayer = new Player();
+string SavedFileName = "";
+
+8 (1)
+// функция нормализации двоичного представления числа до заданной степени 
+        public string Normalization(string str)
+        
+9 (1)
+// фукнция скрещивания двух хромосом
+        public string[] Cross(string unit1, string unit2, int cutpoint)        
+            
+10 (1)
+// функция мутации поколения
+        public void Mutation(int percent, int mutpoint))
+        
+11 (1)
+// функция нормализации двоичного представления числа до заданной степени 
+        public string Normalization(string str)
+        
+12 (1)
+// функция кроссинговера
+        public void Crossover(int cutpoint)
